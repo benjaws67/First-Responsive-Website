@@ -7,6 +7,34 @@
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --dark-blue: #000000;
+      --light-green: #000000;
+      --yellow: #ffffff;
+      --orange: #ffffff;
+      --salmon: #000000;
+    }
+
+    .container {
+      color: var(--dark-blue);
+      font-size: 20px;
+      font-weight: bold;
+      min-height: 100vh;
+      background-color: var(--yellow);
+    }
+
+    .row {
+      border: 1px solid var(--dark-blue);
+      min-height: 50px;
+    }
+
+    [class^="col"] {
+      border: 1px solid var(--light-green);
+      min-height: 50px;
+    }
+  </style>
 </head>
 
 <body>
@@ -15,12 +43,55 @@
     crossorigin="anonymous"></script>
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <p>Worst NFL teams of all time</p>
+      <div class="col-12">
+        <p class="worst">Worst NFL teams of all time</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6"></div>
+      <div class="col-lg-6 col-md-6 col-sm-12"><img src="img/2008 lions.jpg"></div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <p>1. 2008 Detroit Lions (0–16)
+          First team in NFL history to go 0–16
+          Lost games by an average of 15+ points
+          Defense allowed 517 points
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        2. 2017 Cleveland Browns (0–16)
+        Second 0–16 team
+
+
+        15 of 16 losses by double digits
+
+
+        Part of a 1–31 two-season stretch (2016–2017)
+
+      </div>
+      <div class="col"><img src="img/2017 browns.jpg"></div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="img/download.jpg">
+      </div>
+      <div class="col">
+        3. 1976 Tampa Bay Buccaneers (0–14)
+        Expansion team
+
+
+        Lost first 26 games in franchise history (spanning two seasons)
+
+
+        Scored only 125 total points all season
+
+
+
+
+
+
+
+      </div>
     </div>
   </div>
 </body>
